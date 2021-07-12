@@ -22,7 +22,7 @@ resource "digitalocean_record" "codingbuddies_email_mx" {
   name          = "@"
   value         = "mx${count.index + 1}.privateemail.com."
   count         = 2
-  priority      = count.index
+  priority      = 10
 }
 
 # TXT record for GitHub verification
